@@ -58,6 +58,10 @@ h1, h2{
     font-family: "Aniron";
 }
 
+h1{
+    padding-top: 32px;
+}
+
 h2{
     text-align: center;
     font-size: xx-large;
