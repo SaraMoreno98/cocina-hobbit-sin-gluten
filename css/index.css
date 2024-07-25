@@ -70,6 +70,7 @@ h2{
 h3{
     font-weight: bolder;
     font-size: x-large;
+    margin-bottom: 0%;
 }
 
 img{
@@ -141,6 +142,7 @@ td{
     font-size: x-large;
     font-weight: bold;
     text-align: center;
+    margin-bottom: -80px;
 }
 
 .p-receta-separa{
