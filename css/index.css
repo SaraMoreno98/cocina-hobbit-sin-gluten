@@ -134,7 +134,8 @@ td{
     padding-top: 50px;
 }
 
-.recetas{margin-top: 32px;
+.recetas{
+    margin-top: 32px;
 }
 
 /* RECETA */
@@ -243,6 +244,7 @@ td{
     color: #f9b233;
 }
 
+/* MOVIL */
 @media only screen and (min-width: 320px) and (max-width:767px) {
     .banner{
         width: 100%;
@@ -255,6 +257,7 @@ td{
     .grid-estructura{
         display: grid;
         grid-template-rows: auto;
+        grid-template-columns: none;
     }
 
     .grid-titu-descrip{
@@ -281,6 +284,10 @@ td{
         grid-row: auto;
     }
 
+    main{
+        width: 80%;
+    }
+
     header{
         margin-left: 16px;
         margin-right: 16px;
@@ -303,11 +310,76 @@ td{
         grid-template-columns: none;
         grid-template-rows: auto;
     }
+
+    .tit-receta{
+        margin-bottom: -10px;
+    }
 }
 
 @media only screen and (min-width: 375px) and (max-width:767px) {
     .receta-info{
         display: grid;
         grid-template-columns: 50% 50%;
+    }
+
+    .tit-receta{
+        margin-bottom: 0px;
+    }
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1107px) {
+    .banner{
+        width: 100%;
+        margin-top: 0;
+        border-radius: 0;
+        height: 100%;
+        box-shadow: none;
+    }
+    
+    .grid-estructura{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: none;
+    }
+
+    .grid-titu-descrip{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: none;
+    }
+
+    .alergenos{
+        display: grid;
+        grid-template-columns: none;
+        grid-row: auto;
+    }
+
+    .tit-receta{
+        margin-bottom: -30px;
+    }
+
+    .alergenos{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .separacion-comida-1{
+        padding-top: 0px;
+    }
+
+    header{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        padding-bottom: 32px;
+        object-fit: cover;
+        border-radius: 16px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
     }
 }
