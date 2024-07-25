@@ -99,6 +99,15 @@ a:hover{
     color: var(--green);
 }
 
+.enlace-schar{
+    color: white;
+}
+
+.enlace-schar:hover{
+    color: white;
+    font-weight: initial;
+}
+
 table{
     width: 90%;
 }
