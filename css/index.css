@@ -73,12 +73,16 @@ h3{
 }
 
 img{
-    width: 90%;
-    height: 90%;
+    width: 100%;
     margin-top: 10%;
     object-fit: cover;
     border-radius: 16px;
 }
+
+.img-recetas{
+    height: 400px;
+}
+
 hr{
     height: 0.75;
     background-color: #1A1B26;
@@ -125,6 +129,10 @@ td{
     padding-top: 100px;
 }
 
+.separacion-comida-1{
+    padding-top: 50px;
+}
+
 .recetas{margin-top: 32px;
 }
 
@@ -141,7 +149,7 @@ td{
 
 .grid-titu-descrip{
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-rows: auto;
 }
 
 .grid-titu-descrip-2{
@@ -202,27 +210,27 @@ td{
     font-weight: 500;
 }
 
-/* BOTON ARRIBA */
+
+/* BOTON ARRIBA
 .top{
     --offset: 50px;
 
     position: sticky;
-    bottom: 100px;
     margin-left: 90%;
     margin-top: calc(100% + var(--offset));
 
-    /* ESTILO */
     text-decoration: none;
     padding: 10px;
-    height: 40px;
+    height: 45px;
     width: 30px;
     text-align: center;
-    font-family: "Playfair Display", sans-serif;
+    font-family: "Aniron", sans-serif;
     color: var(--white);
     background-color: var(--black);
     border-radius: 15px;
     white-space: nowrap;
 }
+ */
 
 /* ENLACE FOOTER */
 .web{
@@ -231,4 +239,73 @@ td{
 
 .web:hover{
     color: #f9b233;
+}
+
+@media only screen and (min-width: 320px) and (max-width:767px) {
+    .banner{
+        width: 100%;
+        margin-top: 0;
+        border-radius: 0;
+        height: 100%;
+        box-shadow: none;
+    }
+    
+    .grid-estructura{
+        display: grid;
+        grid-template-rows: auto;
+    }
+
+    .grid-titu-descrip{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: none;
+    }
+
+    .grid-ingre-pasos{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: none;
+    }
+
+    .grid-ingre-pasos-2{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: none;        
+    }
+
+    .alergenos{
+        display: grid;
+        grid-template-columns: none;
+        grid-row: auto;
+    }
+
+    header{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    
+    img{
+        width: 100%;
+        height: 100%;
+        padding-bottom: 32px;
+        object-fit: cover;
+        border-radius: 16px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width:374px) {  
+    .receta-info{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: auto;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width:767px) {
+    .receta-info{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
 }
